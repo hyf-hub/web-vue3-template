@@ -1,20 +1,20 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
-import './style.css'
-import 'uno.css'
-import 'element-plus/dist/index.css'
-import 'virtual:svg-icons-register'
-import router from './router'
-import App from './App.vue'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
+import "./style.css";
+import "uno.css";
+import "element-plus/dist/index.css";
+import "virtual:svg-icons-register";
+import router from "./router";
+import App from "./App.vue";
 
-const app = createApp(App)
+const app = createApp(App);
 // 全局管理
-const pinia = createPinia()
+const pinia = createPinia();
 // 数据持久化插件
-pinia.use(piniaPluginPersistedstate)
-app.use(pinia)
+pinia.use(piniaPluginPersistedstate);
+app.use(pinia);
 // 路由
-app.use(router)
+app.use(router);
 
-app.mount('#app')
+app.mount("#app");

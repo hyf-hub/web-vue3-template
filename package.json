@@ -2,11 +2,13 @@
   "name": "web-cli",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:prettier:all": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vueuse/core": "^10.3.0",
@@ -24,8 +26,16 @@
   "devDependencies": {
     "@types/lodash-es": "^4.17.8",
     "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
     "@unocss/transformer-directives": "^0.54.1",
     "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.16.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
     "sass": "^1.64.2",
     "typescript": "^5.0.2",
     "unocss": "^0.54.1",

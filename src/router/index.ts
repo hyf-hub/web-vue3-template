@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 export const router = createRouter({
   history: createWebHistory(),
   routes: [],
-})
+});
 // 是否已经加载了路由
 // let isLoad = false
 // router.beforeEach(async (to, from) => {
@@ -23,4 +23,4 @@ export const router = createRouter({
 //   }
 // })
 
-export default router
+export default router;

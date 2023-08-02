@@ -1,5 +1,5 @@
-import transformerDirectives from '@unocss/transformer-directives'
-import { defineConfig, presetUno } from 'unocss'
+import transformerDirectives from "@unocss/transformer-directives";
+import { defineConfig, presetUno } from "unocss";
 export default defineConfig({
   // 使unocss支持 css指令 如apply
   transformers: [transformerDirectives()],
@@ -7,4 +7,4 @@ export default defineConfig({
   // https://tailwindcss.com/
   // https://windicss.org/guide/
   presets: [presetUno()],
-})
+});
