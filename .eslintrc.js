@@ -2,6 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    // 增加node环境，否则在别的文件中使用node的东西会报错
+    node: true,
   },
   extends: [
     "eslint:recommended",
@@ -29,6 +31,7 @@ module.exports = {
   // eslint-plugin-prettier 可简写成 prettier
   plugins: ["@typescript-eslint", "vue", "prettier"],
   rules: {
+    "@typescript-eslint/no-var-requires": "off",
     "prettier/prettier": "error", // 开启规则
   },
 };

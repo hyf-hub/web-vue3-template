@@ -9,7 +9,7 @@ export function useECharts(
 ) {
   let chartInstance: echarts.ECharts | null = null;
   let removeResizeFn: Fn;
-  const cacheOptions = ref({}) as Ref<EChartsOption>;
+  const cacheOptions = ref<EChartsOption>({});
   function resizeFn() {
     chartInstance?.resize({
       animation: {
